@@ -1,0 +1,25 @@
+body {
+  font-family: "Courier New", monospace;
+}
+button, a {
+  transition: transform 0.2s ease;
+}
+button:hover, a:hover {
+  transform: scale(1.05) rotate(1deg);
+}
+body::before {
+  content: "▓ ▓ ░ ▓ ▒ ▒";
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.05);
+  z-index: 9999;
+  animation: float 10s infinite linear;
+  pointer-events: none;
+}
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(20px, 10px); }
+  100% { transform: translate(0, 0); }
+}

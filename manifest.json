@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "VilniusTech Glitch Routine",
+  "version": "1.0",
+  "description": "Vizualinė meninė intervencija vilniustech.lt puslapiuose.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://vilniustech.lt/*",
+        "*://www.vilniustech.lt/*",
+        "*://mano.vilniustech.lt/*",
+        "*://www.mano.vilniustech.lt/*"
+      ],
+      "js": ["brainrot_videos.js", "content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
